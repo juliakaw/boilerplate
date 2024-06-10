@@ -39,44 +39,6 @@
   display: flex;
 }
 
-.w-pagination-wrapper {
-  flex-wrap: wrap;
-  justify-content: center;
-  display: flex;
-}
-
-.w-pagination-previous {
-  color: #333;
-  background-color: #fafafa;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 9px 20px;
-  font-size: 14px;
-  display: block;
-}
-
-.w-pagination-previous-icon {
-  margin-right: 4px;
-}
-
-.w-pagination-next {
-  color: #333;
-  background-color: #fafafa;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 9px 20px;
-  font-size: 14px;
-  display: block;
-}
-
-.w-pagination-next-icon {
-  margin-left: 4px;
-}
-
 @media screen and (max-width: 991px) {
   .w-layout-blockcontainer {
     max-width: 728px;
@@ -529,6 +491,7 @@
   background-image: url('../images/grupowe1.png');
   background-position: 50% 0;
   margin-top: auto;
+  margin-bottom: auto;
 }
 
 .div-photo.szkolenia-gr-2 {
@@ -1221,6 +1184,10 @@
     background-size: cover;
     height: 450px;
   }
+
+  .section-2 {
+    max-width: none;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1304,6 +1271,12 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .25);
   }
 
+  .button.aktulnosci {
+    margin-top: 100px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
   .button.hero {
     margin-top: auto;
   }
@@ -1312,12 +1285,8 @@
     height: 350px;
   }
 
-  .container-6 {
+  .container-6, .container-6.smaller {
     max-width: 1200px;
-  }
-
-  .container-6.smaller {
-    max-width: 940px;
   }
 
   .hero-split {
@@ -1349,6 +1318,11 @@
 
   .div-photo.o-nas-1 {
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .5);
+  }
+
+  .div-photo.szkolenia-gr-1 {
+    height: 100%;
+    min-height: 400px;
   }
 
   .div-photo.szkolenia-gr-2 {
@@ -1399,12 +1373,33 @@
     margin-left: 10px;
   }
 
+  .image-53 {
+    width: 450px;
+    height: 350px;
+  }
+
+  .section-2 {
+    max-width: 1400px;
+  }
+
+  .container-19 {
+    margin-top: 0;
+  }
+
   .gallery {
     height: 450px;
   }
 
   .container-23 {
     max-width: 1200px;
+  }
+
+  .container-24 {
+    max-width: none;
+  }
+
+  .tabs {
+    width: 100%;
   }
 
   .image-57 {
@@ -1564,6 +1559,10 @@
     font-size: 28px;
   }
 
+  .tytul-ozd.margin-top {
+    margin-bottom: 20px;
+  }
+
   .button-no-bg {
     margin-top: 20px;
     font-size: 14px;
@@ -1639,6 +1638,11 @@
     margin-top: auto;
     margin-bottom: auto;
     overflow: hidden;
+  }
+
+  .section-2 {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .container-19 {
@@ -1859,6 +1863,7 @@
   }
 
   .tytul-ozd.margin-top {
+    margin-bottom: 20px;
     margin-left: 0;
   }
 
@@ -2148,7 +2153,7 @@
 
   .tytul.margin-left {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     margin-left: 0;
     font-size: 28px;
   }
@@ -2174,6 +2179,7 @@
   .tytul-ozd.margin-top {
     text-align: left;
     margin-top: 15px;
+    margin-bottom: 20px;
     margin-left: 0;
     font-size: 30px;
   }
